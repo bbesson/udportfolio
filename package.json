@@ -1,0 +1,11 @@
+{
+    "name": "udacity-web-perf",
+    "version": "0.0.0",
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "load-grunt-tasks": "~0.1.0",
+        "grunt-pagespeed": "~0.3.0",
+        "ngrok": "~0.1.97"
+    }
+}
