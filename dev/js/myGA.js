@@ -6,6 +6,5 @@
     w[g].l = 1 * new Date();
 })(window, 'ga');
 
-// TODO: replace with your Google Analytics profile ID.
-ga('create', 'UA-XXXX-Y');
+ga('create', 'UA-47251902-1');
 ga('send', 'pageview');
