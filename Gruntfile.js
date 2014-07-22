@@ -136,6 +136,15 @@ module.exports = function (grunt) {
                     '<%= yeoman.dist %>/js/myGA.js': '<%= yeoman.app %>/js/myGA.js'
                 }
             }
+        },
+
+        inlinecss: {
+            main: {
+                options: {},
+                files: {
+                    '<%= yeoman.dist %>/index.html': '<%= yeoman.dist %>/index.html'
+                }
+            }
         }
     });
 
@@ -164,7 +173,8 @@ module.exports = function (grunt) {
         'copy:dist',
         'cssmin',
         'uglify',
-        'usemin'
+        'usemin',
+        'inlinecss'
     ]);
 
     // Register default tasks
