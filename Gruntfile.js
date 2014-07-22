@@ -94,7 +94,9 @@ module.exports = function (grunt) {
             // Usemin blocks.
             dist: {
                 files: {
-                    '<%= yeoman.dist %>/css/main.css': '.tmp/css/style.css'
+                    '<%= yeoman.dist %>/css/style.css': '.tmp/css/style.css',
+                    '<%= yeoman.dist %>/css/smartphone.css': '.tmp/css/smartphone.css',
+                    '<%= yeoman.dist %>/css/print.css': '.tmp/css/print.css'
                     // [
                     //     '.tmp/css/{,*/}*.css',
                     //     // '<%= yeoman.dist %>/styles/temp.css',
@@ -130,9 +132,8 @@ module.exports = function (grunt) {
         uglify: {
             dist: {
                 files: {
-                    '<%= yeoman.dist %>/js/perfmatters.js': [
-                        '<%= yeoman.app %>/js/perfmatters.js'
-                    ]
+                    '<%= yeoman.dist %>/js/perfmatters.js': '<%= yeoman.app %>/js/perfmatters.js',
+                    '<%= yeoman.dist %>/js/myGA.js': '<%= yeoman.app %>/js/myGA.js'
                 }
             }
         }
